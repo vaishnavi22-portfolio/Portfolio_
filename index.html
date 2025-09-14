@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vaishnavi Jagtap | Portfolio</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    :root {
+      --accent: #00ffcc; /* Neon Cyan */
+      --bg: #000000;     /* Black */
+      --text: #f5f5f5;   /* Light text */
+      --muted: #aaa;     /* Muted gray */
+      --card: #111;      /* Dark card */
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .avatar img {
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 10px solid var(--accent);
+      box-shadow: 0 0 55px var(--accent);
+    }
+    header h1 { margin: 12px 0 6px; font-size: 2rem; color: var(--accent); }
+    header p { margin: 0; color: var(--muted); }
+
+    nav {
+      margin-top: 14px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background 200ms;
+    }
+    nav a:hover {
+      background: var(--accent);
+      color: #000;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 16px 36px;
+    }
+
+    section {
+      display: none;
+      padding: 20px;
+      border-radius: 10px;
+      background: var(--card);
+      margin-top: 20px;
+    }
+    section.active {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+    h2 { color: var(--accent); margin-top: 0; }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 12px;
+    }
+    .card {
+      padding: 14px;
+      border-radius: 10px;
+      background: #1a1a1a;
+      border: 1px solid #222;
+      box-shadow: 0 0 12px rgba(0,255,204,0.1);
+    }
+    .card img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    .read-more {
+      color: var(--accent);
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 6px;
+      display: inline-block;
+    }
+    .hidden-text {
+      display: none;
+      margin-top: 8px;
+      color: var(--muted);
+    }
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+.skills-list p {
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #222;
+  text-align: center;
+  color: var(--accent);
+}
+
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    /* Contact icons */
+    .contact p {
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="avatar">
+      <img src="C:\Users\hp\Desktop\Portfolio\images/profile.jpg" alt="Vaishnavi Jagtap"/>
+    </div>
+    <h1>Vaishnavi Jagtap</h1>
+<p>
+  🎓 MCA Student in Computer Applications <br>
+  💻 Skilled in Web & Software Development | 🌟 Driven by Innovation & Learning
+</p>
+
+    
+    <nav>
+      <a href="#about" data-section="about">About</a>
+      <a href="#education" data-section="education">Education</a>
+<a href="#skills" data-section="skills">Skills</a>
+
+      <a href="#projects" data-section="projects">Projects</a>
+      <a href="#contact" data-section="contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="active">
+      <h2>About Me</h2>
+      
+<p>
+    I am an enthusiastic and detail-oriented <b>MCA student</b> with a strong academic foundation in computer science and hands-on experience in <b>software and web development</b>. 
+    My technical skills include proficiency in <b>Python, Java, C, C++, HTML, CSS, JavaScript, and MySQL</b>, along with exposure to modern frameworks and development tools.
+  </p>
+  <p>
+    Throughout my academic journey, I have worked on several <b>real-world and academic projects</b>, where I focused on designing efficient solutions, building user-friendly applications, and 
+    integrating databases for scalable performance. These experiences have helped me strengthen my problem-solving mindset, logical thinking, and teamwork abilities. 
+  </p>
+  <p>
+    I am particularly passionate about <b>full-stack development</b>, <b>database management</b>, and <b>machine learning</b>. 
+    I continuously strive to improve my knowledge by exploring the latest industry practices, tools, and technologies, ensuring that I stay aligned with modern development standards. 
+  </p>
+  <p>
+    My ultimate goal is to contribute as a <b>professional software developer</b> in a dynamic organization where I can apply my technical expertise, creativity, and collaborative skills 
+    to develop impactful solutions that solve real-world problems. 
+  </p>
+<h3>🛠 Technical Skills</h3>
+<ul>
+  <li>Python, Java, C, C++</li>
+  <li>HTML, CSS, JavaScript</li>
+  <li>MySQL, SQLite</li>
+  <li>Laravel, Git/GitHub</li>
+</ul>
+
+      <a class="read-more" href="images/vaishnavij.pdf" download><i class="fa fa-download"></i> Download CV</a>
+    </section>
+
+    <section id="education">
+      <h2><i class="fa fa-graduation-cap"></i> Education</h2>
+      <p><b>2025 - Current</b> Master in Computer Application (Ongoing)<br>MET'S Bhujbal Knowledge City, Nashik</p>
+      <p><b>2022 - 2025</b> B.Sc. Computer Science<br>K.K.Wagh Computer Science College,Nashik<br>Overall CGPA: 8.25<br>First Year:<br>Semester I:7.11<br>Semester II:7.68<br>Second Year:<br>Semester III:7.91<br>Semester IV:8.82<br>Third Year:<br>Semester V:7.8.64<br>Semester VI:8.91<br></p>
+      <p><b>2022</b> HSC State Board,Maharashtra (Science,PCM)<br> K.A.A.N.M.S College, Satana<br>Percentage: 57.83%</p>
+      <p><b>2020</b> SSC State Board,Maharashtra<br> Dnyandevi Savitribai Phule Secondary School<br>Percentage: 88.40%</p>
+    </section>
+<section id="skills">
+  <h2>🛠 Skills</h2>
+  <div class="skills-list">
+    <p><b>Programming:</b> Python, Java, C, C++</p>
+    <p><b>Web Development:</b> HTML, CSS, JavaScript, Laravel</p>
+    <p><b>Database:</b> MySQL, SQLite</p>
+    <p><b>Tools & Others:</b> Git/GitHub, VS Code, Eclipse</p>
+  </div>
+</section>
+
+
+    <section id="projects">
+      <h2><i class="fa fa-code"></i> Projects</h2>
+      <div class="projects-grid">
+        <div class="card">
+          <img src="C:\Users\hp\Desktop\Portfolio\images/pos-logo.png" alt="POS"/>
+          <h3>Point of Sale System</h3>
+          <p>Developed a web-based POS system for managing sales transactions.</p>
+          <span class="read-more" onclick="toggleText(this)">Read more</span>
+          <div class="hidden-text">
+            <p>
+
+Technologies Used: HTML, CSS, JavaScript, Laravel (PHP Framework), MySQL<br>
+
+Description:<br>
+
+Developed a web-based Point of Sale system for managing sales transactions.
+
+Implemented features such as:<br>
+
+Product management (add, update, delete items)<br>
+
+Customer billing and invoice generation<br>
+
+Inventory management with stock updates<br>
+
+Secure login and user authentication<br>
+
+
+Created a responsive and user-friendly interface using HTML, CSS, and JavaScript.
+
+Used Laravel framework for backend operations and MySQL database for data storage.
+
+
+Outcome:<br>
+
+Automated the sales process to reduce manual errors.<br>
+
+Improved inventory tracking and reporting efficiency.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="C:\Users\hp\Desktop\Portfolio\images/crime-logo.png" alt="Crime Reporter"/>
+          <h3>Crime Reporter System</h3>
+          <p>A system that allows users to report crimes digitally with ML-based analysis.</p>
+          <span class="read-more" onclick="toggleText(this)">Read more</span>
+          <div class="hidden-text">
+            <p>
+
+Technologies Used: Python, Machine Learning, Flask/Django (if web-based), MySQL<br>
+
+Description:<br>
+
+Developed a Crime Reporting System that allows users to register and report criminal activities digitally.
+
+Implemented Machine Learning algorithms to analyze reported data and identify crime patterns/trends.
+
+Integrated modules for:<br>
+
+User registration & secure login
+
+Crime report submission with details
+
+Data classification and prediction of crime-prone areas
+
+Admin dashboard for monitoring reports
+
+
+Built the backend in Python and connected it with a database for storing and retrieving data efficiently.
+
+
+Outcome:<br>
+
+Improved accessibility for crime reporting and tracking.<br>
+
+Enabled authorities to get insights from data using ML-based prediction.<br>
+
+Enhanced knowledge of Python, Machine Learning models, and real-world application development.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="C:\Users\hp\Desktop\Portfolio\images/smart-logo.png" alt="Attendance"/>
+          <h3>Smart Attendance System</h3>
+          <p>Automated attendance marking using face recognition.</p>
+          <span class="read-more" onclick="toggleText(this)">Read more</span>
+          <div class="hidden-text">
+            <p>
+
+Technologies Used: Python, OpenCV, Face Recognition Libraries, MySQL<br>
+
+Description:<br>
+
+Designed a smart attendance system that automatically marks attendance using face recognition.
+
+Integrated OpenCV and Python face-recognition libraries to detect and verify student/faculty faces.
+
+Stored attendance records securely in a database (MySQL/SQLite) for easy access and reporting.
+
+Key Features:<br>
+
+Face detection & recognition<br>
+
+Automated attendance marking<br>
+
+Real-time database update<br>
+
+Attendance report generation<br>
+
+
+
+Outcome:<br>
+
+Reduced manual errors in attendance.<br>
+
+Increased efficiency by automating the process.<br>
+
+Strengthened skills in Python programming, computer vision, and database integration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2><i class="fa fa-envelope"></i> Contact</h2>
+      <p><i class="fa fa-envelope"></i> <a href="mailto:vaishnavijagtap390@gmail.com">vaishnavijagtap390@gmail.com</a></p>
+      <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/vaishnavi-jagtap-45585b257" target="_blank">LinkedIn</a></p>
+      <p><i class="fa-brands fa-github"></i> <a href="https://github.com/vaishnavijagtap204" target="_blank">GitHub</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Vaishnavi Jagtap — Portfolio ❤</p>
+  </footer>
+
+  <script>
+    // Section switch
+    const sections = document.querySelectorAll("main section");
+    document.querySelectorAll("nav a[data-section]").forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        const id = link.dataset.section;
+        sections.forEach(s => s.classList.remove("active"));
+        document.getElementById(id).classList.add("active");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
+
+    // Read More toggle
+    function toggleText(el) {
+      const hidden = el.nextElementSibling;
+      if (hidden.style.display === "block") {
+        hidden.style.display = "none";
+        el.textContent = "Read more";
+      } else {
+        hidden.style.display = "block";
+        el.textContent = "Read less";
+      }
+    }
+  </script>
+</body>
+</html>
